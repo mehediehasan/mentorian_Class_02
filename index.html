@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        .tbalesize tr th,td{
+            padding: 10px;
+        }
+        .tbalesize, .tbalesize tr th,td{
+            border: 1px solid #CB4618;
+            
+        }
+        form fieldset,input,select,textarea,button{
+            
+            margin: 10px;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        form label {
+            margin-left: 10px;
+        }
+
+        .box{
+            background-color: lightseagreen;
+            width: 400px;
+            height: 400px;
+            
+        }
+        .box img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1 style="text-align: center; color: lightskyblue;">Registration Form</h1>
+
+
+    <form action="" method="get">
+
+        <fieldset>
+            <legend>Registration Form</legend>
+
+            <label for=""><b>Full Name</b></label>
+            <input type="text" name="mehedi hasan" placeholder="Mehedi Hasan" required>
+            <br>
+            <label for=""><b>Email Id</b></label>
+            <input type="email" name="email" placeholder="name@exmaple.com" required>
+            <br>
+            <label for=""><b>Password</b></label>
+            <input type="password" name="pass" required>
+            <br>
+            <label for=""><b>Salary</b></label>
+            <input type="number" name="salary" placeholder="12324" required>
+            <br>
+            <label for=""><b>Gander</b></label> <br>
+            <input type="radio" name="gander" value="male">Male <br>
+            <input type="radio" name="gander" value="female">Female <br>
+            <input type="radio" name="gander" value="male">Others <br>
+            <br>
+            <label for=""><b>Registration Time</b></label><br>
+            <input type="time" name="dob" required>
+            <br><br>
+            <label for=""><b>Date of Birth</b></label><br>
+            <input type="date" name="dob" required>
+            <br><br>
+            <label for=""><b>Age</b></label>
+            <br>
+            <input type="number" placeholder="Select Age" required/>
+            <br>
+            <br>
+            <label for=""><b>District</b></label><br>
+            <select required>
+                <option selected disabled value="">Select One</option>
+                <option value="Dha">Dhaka</option>
+                <option value="CTG">Chittagong</option>
+                <option value="Syl">Sylhet</option>
+                <option value="Khu">Khulna</option>
+                <option value="Raj">Rajshahi</option>
+             </select>
+            <br>
+            <br>
+            <label for=""><b>Skills</b></label> <br>
+            <input type="checkbox" name="web" value="WebDesign" /> Web Design <br>
+            <input type="checkbox" name="dev" value="Development"> Development <br>
+            <input type="checkbox" name="uid" value="UiDesign"> Ui Design <br>
+            <input type="checkbox" name="seo" value="Seo"> SEO <br>
+            <br>
+            <label for=""><b>Describe Yourself</b></label> <br>
+            <textarea required cols="30" rows="3" placeholder="Describe Yourself"></textarea>
+            <br>
+            <br>
+            <button type="submit" class="registerbtn">Register</button>
+
+        </fieldset>
+
+    </form>
+
+
+    <br><br>
+
+    <table class="tbalesize">
+        <tr>
+            <th>No</th>
+            <th>Competition</th>
+            <th>Name</th>
+            <th>Detaila1</th>
+            <th>Detaila2</th>
+        </tr>
+        <tr>
+            <td rowspan="4">1</td>
+            <td rowspan="4">Swimming</td>
+            <td>John</td>
+            <td rowspan="3">This info  is relevant to John, Steven and Mark</td>
+            <td rowspan="2">This info is relevant to  John and Steven</td>
+        </tr>
+        <tr>
+            <td>Steven</td>
+        </tr>
+        <tr>
+            <td>Mark</td>
+            <td rowspan="2">This info is  relevant to Mark and Peter</td>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>The info is  only relevant to  peter</td>
+        </tr>
+    </table>
+
+
+    <br><br>
+
+    <div class="box">
+        <img src="img/Beshi-Diye-Khushi-Chorai-Inner-Banner-1920-X-710-v2_0.jpg" alt="">
+    </div>
+
+</body>
+</html>
